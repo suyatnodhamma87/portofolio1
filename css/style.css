@@ -85,6 +85,40 @@ body {
   display: none;
 }
 
+/* navbar search form */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 40rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.4rem;
+  color: var (--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+
 /* Hero section */
 .hero {
   min-height: 100vh;
@@ -236,7 +270,7 @@ body {
 /* kontak section */
 .kontak .row {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5rem;
   background-color: #222;
 }
 
@@ -258,19 +292,19 @@ body {
   margin-top: 2rem;
   background-color: var(--bg);
   border: 1px solid #eee;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 .kontak .row form .input-group input {
   width: 100%;
   padding: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   background: none;
   color: #fff;
 }
 
 .kontak .row form .btn {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
@@ -356,8 +390,8 @@ footer .credit a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
+    padding: 0.3rem;
+    font-size: 1.4rem;
   }
 
   .navbar .navbar-nav a::after {
@@ -366,6 +400,11 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
   }
 
   .about .row {
